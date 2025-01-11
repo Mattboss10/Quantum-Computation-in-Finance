@@ -1,0 +1,15 @@
+#We will use qiskit's pre-made PortfolioOptimization class, which will turn our stock price data into a problem that our VQE solver can understand.
+#num of assets (length of our NASDAQ issues array)
+num_assets = len(stocks)
+
+# set budget - how many stocks do you want to buy?
+budget = 2
+
+# Defining the portfolio optimization problem
+portfolio = PortfolioOptimization(expected_returns=stock_prices.get_period_return_mean_vector(),
+                                  covariances=stock_prices.get_period_return_covariance_matrix(),
+                                  risk_factor=0.2, budget=budget)
+
+# This creates a quadratic program, which is the form in which the problem can be directly
+# passed to Qiskit's solvers
+problem = portfolio.to_quadratic_program()
