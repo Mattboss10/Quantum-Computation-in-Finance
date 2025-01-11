@@ -1,3 +1,4 @@
+#𝑛 =5 stocks with a budget of 2 stocks in our portfolio and the rest (expected return and covariance) given by real stock market data from 2006–2015.
 #General Qiskit and VQE imports
 from qiskit.algorithms import VQE, QAOA, NumPyMinimumEigensolver
 from qiskit.algorithms.optimizers import COBYLA, L_BFGS_B, SLSQP, SPSA
