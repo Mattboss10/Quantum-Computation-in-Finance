@@ -4,3 +4,6 @@ tunable_circuit = EfficientSU2(num_qubits = num_assets ,reps=3, entanglement='fu
 optimizer = SPSA(maxiter = 15)
 
 method = VQE(ansatz=tunable_circuit,optimizer=optimizer,quantum_instance=Aer.get_backend('qasm_simulator'))
+
+#Visualizing
+tunable_circuit.decompose().draw()
