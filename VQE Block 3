@@ -1,0 +1,3 @@
+#Visalizing hypothetical investment after equalizing starting point.
+plot_stock_prices(stock_prices, form="eq")
+
