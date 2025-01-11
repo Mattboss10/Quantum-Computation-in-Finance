@@ -5,5 +5,5 @@ optimizer = SPSA(maxiter = 15)
 
 method = VQE(ansatz=tunable_circuit,optimizer=optimizer,quantum_instance=Aer.get_backend('qasm_simulator'))
 
-#Visualizing
+#Visualizing the circuit
 tunable_circuit.decompose().draw()
