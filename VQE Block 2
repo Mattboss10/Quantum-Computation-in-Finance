@@ -1,0 +1,1 @@
+plot_stock_prices(stock_prices, form="raw")
