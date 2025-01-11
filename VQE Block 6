@@ -1,0 +1,7 @@
+#After this code is run it should show you the optimal stock combination and some technical results.
+# Solve the Problem
+calc = MinimumEigenOptimizer(method)
+result = calc.solve(portfolio.to_quadratic_program())
+# Display Results
+display_values(result, stocks)
+plot_portfolio_against_market(result, stock_prices)
