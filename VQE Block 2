@@ -1,1 +1,6 @@
+#Lets import our stocks using tickers
+stocks = ["AAPL", "NFLX", "AMZN", "IBM", "GOOG"] # Other stock tickers you can add include F, NVDA, GME, etc. 
+stock_prices = import_stock_prices(stocks)
+
+#Lets Visualize our data
 plot_stock_prices(stock_prices, form="raw")
