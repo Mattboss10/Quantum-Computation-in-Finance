@@ -7,3 +7,8 @@ This can help solve problems that are too difficult for classical computers, suc
 To get historical market prices go to https://www.quandl.com/?modal=register and sign up for your API key.
 
 Look for the part in the code that defines the quandl token and paste it there ,make sure that quotations are at the end.
+
+----
+Ogranzation
+----
+Each Block of code is in a seperate file, each block can be pasted in to a python notebook.
